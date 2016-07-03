@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		504715001D2156A3005E0A27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 504714FF1D2156A3005E0A27 /* main.m */; };
+		5047150F1D215751005E0A27 /* UrnfieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5047150E1D215751005E0A27 /* UrnfieldTests.m */; };
+		504715161D21619B005E0A27 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 504715151D21619B005E0A27 /* InputHandler.m */; };
+		5047151A1D2163A2005E0A27 /* ArabicNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 504715191D2163A2005E0A27 /* ArabicNumber.m */; };
+		5047151C1D2164A1005E0A27 /* ArabicNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 504715191D2163A2005E0A27 /* ArabicNumber.m */; };
+		5047151D1D2164A5005E0A27 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 504715151D21619B005E0A27 /* InputHandler.m */; };
+		504715201D216555005E0A27 /* UrnfieldNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 5047151F1D216555005E0A27 /* UrnfieldNumber.m */; };
+		504715211D216584005E0A27 /* UrnfieldNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 5047151F1D216555005E0A27 /* UrnfieldNumber.m */; };
+		BC5C9E2C1D21B941008D3B30 /* ArabicNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5C9E2B1D21B941008D3B30 /* ArabicNumberTests.m */; };
+		BCA65CB11D293B03006EBE2D /* RomanNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA65CB01D293B03006EBE2D /* RomanNumber.m */; };
+		BCA65CB31D293BC0006EBE2D /* RomanNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA65CB21D293BC0006EBE2D /* RomanNumberTests.m */; };
+		BCA65CB41D293C38006EBE2D /* RomanNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA65CB01D293B03006EBE2D /* RomanNumber.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		504714FA1D2156A3005E0A27 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		504714FC1D2156A3005E0A27 /* RomanUrnfieldKata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RomanUrnfieldKata; sourceTree = BUILT_PRODUCTS_DIR; };
+		504714FF1D2156A3005E0A27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5047150C1D215751005E0A27 /* UrnfieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrnfieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5047150E1D215751005E0A27 /* UrnfieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UrnfieldTests.m; sourceTree = "<group>"; };
+		504715101D215751005E0A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504715141D21619B005E0A27 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		504715151D21619B005E0A27 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		504715171D21626A005E0A27 /* NumberBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberBase.h; sourceTree = "<group>"; };
+		504715181D2163A2005E0A27 /* ArabicNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArabicNumber.h; sourceTree = "<group>"; };
+		504715191D2163A2005E0A27 /* ArabicNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArabicNumber.m; sourceTree = "<group>"; };
+		5047151E1D216555005E0A27 /* UrnfieldNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrnfieldNumber.h; sourceTree = "<group>"; };
+		5047151F1D216555005E0A27 /* UrnfieldNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrnfieldNumber.m; sourceTree = "<group>"; };
+		BC5C9E2B1D21B941008D3B30 /* ArabicNumberTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArabicNumberTests.m; sourceTree = "<group>"; };
+		BCA65CAF1D293B03006EBE2D /* RomanNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RomanNumber.h; sourceTree = "<group>"; };
+		BCA65CB01D293B03006EBE2D /* RomanNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomanNumber.m; sourceTree = "<group>"; };
+		BCA65CB21D293BC0006EBE2D /* RomanNumberTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomanNumberTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		504714F91D2156A3005E0A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504715091D215751005E0A27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		504714F31D2156A3005E0A27 = {
+			isa = PBXGroup;
+			children = (
+				504714FE1D2156A3005E0A27 /* RomanUrnfieldKata */,
+				5047150D1D215751005E0A27 /* UrnfieldTests */,
+				504714FD1D2156A3005E0A27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		504714FD1D2156A3005E0A27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504714FC1D2156A3005E0A27 /* RomanUrnfieldKata */,
+				5047150C1D215751005E0A27 /* UrnfieldTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		504714FE1D2156A3005E0A27 /* RomanUrnfieldKata */ = {
+			isa = PBXGroup;
+			children = (
+				504714FF1D2156A3005E0A27 /* main.m */,
+				504715141D21619B005E0A27 /* InputHandler.h */,
+				504715151D21619B005E0A27 /* InputHandler.m */,
+				504715171D21626A005E0A27 /* NumberBase.h */,
+				504715181D2163A2005E0A27 /* ArabicNumber.h */,
+				504715191D2163A2005E0A27 /* ArabicNumber.m */,
+				5047151E1D216555005E0A27 /* UrnfieldNumber.h */,
+				5047151F1D216555005E0A27 /* UrnfieldNumber.m */,
+				BCA65CAF1D293B03006EBE2D /* RomanNumber.h */,
+				BCA65CB01D293B03006EBE2D /* RomanNumber.m */,
+			);
+			path = RomanUrnfieldKata;
+			sourceTree = "<group>";
+		};
+		5047150D1D215751005E0A27 /* UrnfieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				5047150E1D215751005E0A27 /* UrnfieldTests.m */,
+				504715101D215751005E0A27 /* Info.plist */,
+				BC5C9E2B1D21B941008D3B30 /* ArabicNumberTests.m */,
+				BCA65CB21D293BC0006EBE2D /* RomanNumberTests.m */,
+			);
+			path = UrnfieldTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		504714FB1D2156A3005E0A27 /* RomanUrnfieldKata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504715031D2156A3005E0A27 /* Build configuration list for PBXNativeTarget "RomanUrnfieldKata" */;
+			buildPhases = (
+				504714F81D2156A3005E0A27 /* Sources */,
+				504714F91D2156A3005E0A27 /* Frameworks */,
+				504714FA1D2156A3005E0A27 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RomanUrnfieldKata;
+			productName = RomanUrnfieldKata;
+			productReference = 504714FC1D2156A3005E0A27 /* RomanUrnfieldKata */;
+			productType = "com.apple.product-type.tool";
+		};
+		5047150B1D215751005E0A27 /* UrnfieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504715111D215751005E0A27 /* Build configuration list for PBXNativeTarget "UrnfieldTests" */;
+			buildPhases = (
+				504715081D215751005E0A27 /* Sources */,
+				504715091D215751005E0A27 /* Frameworks */,
+				5047150A1D215751005E0A27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UrnfieldTests;
+			productName = UrnfieldTests;
+			productReference = 5047150C1D215751005E0A27 /* UrnfieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		504714F41D2156A3005E0A27 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = CrowdLab;
+				TargetAttributes = {
+					504714FB1D2156A3005E0A27 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					5047150B1D215751005E0A27 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 504714F71D2156A3005E0A27 /* Build configuration list for PBXProject "RomanUrnfieldKata" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 504714F31D2156A3005E0A27;
+			productRefGroup = 504714FD1D2156A3005E0A27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504714FB1D2156A3005E0A27 /* RomanUrnfieldKata */,
+				5047150B1D215751005E0A27 /* UrnfieldTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5047150A1D215751005E0A27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		504714F81D2156A3005E0A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA65CB11D293B03006EBE2D /* RomanNumber.m in Sources */,
+				5047151A1D2163A2005E0A27 /* ArabicNumber.m in Sources */,
+				504715201D216555005E0A27 /* UrnfieldNumber.m in Sources */,
+				504715001D2156A3005E0A27 /* main.m in Sources */,
+				504715161D21619B005E0A27 /* InputHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		504715081D215751005E0A27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA65CB41D293C38006EBE2D /* RomanNumber.m in Sources */,
+				5047151C1D2164A1005E0A27 /* ArabicNumber.m in Sources */,
+				504715211D216584005E0A27 /* UrnfieldNumber.m in Sources */,
+				5047151D1D2164A5005E0A27 /* InputHandler.m in Sources */,
+				5047150F1D215751005E0A27 /* UrnfieldTests.m in Sources */,
+				BCA65CB31D293BC0006EBE2D /* RomanNumberTests.m in Sources */,
+				BC5C9E2C1D21B941008D3B30 /* ArabicNumberTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		504715011D2156A3005E0A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		504715021D2156A3005E0A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		504715041D2156A3005E0A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		504715051D2156A3005E0A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		504715121D215751005E0A27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UrnfieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crowdlab.UrnfieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		504715131D215751005E0A27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UrnfieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crowdlab.UrnfieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		504714F71D2156A3005E0A27 /* Build configuration list for PBXProject "RomanUrnfieldKata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504715011D2156A3005E0A27 /* Debug */,
+				504715021D2156A3005E0A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504715031D2156A3005E0A27 /* Build configuration list for PBXNativeTarget "RomanUrnfieldKata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504715041D2156A3005E0A27 /* Debug */,
+				504715051D2156A3005E0A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504715111D215751005E0A27 /* Build configuration list for PBXNativeTarget "UrnfieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504715121D215751005E0A27 /* Debug */,
+				504715131D215751005E0A27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 504714F41D2156A3005E0A27 /* Project object */;
+}
