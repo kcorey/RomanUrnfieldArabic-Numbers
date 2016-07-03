@@ -11,4 +11,8 @@
 
 @interface RomanNumber : NSObject <NumberBase>
 
+- (NSString *)standardToCondensed:(NSString *)inputString;
+
+- (NSString *)condensedToStandard:(NSString *)inputString;
+
 @end

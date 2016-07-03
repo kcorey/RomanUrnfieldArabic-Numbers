@@ -31,4 +31,17 @@
     return nil;
 }
 
+- (NSString *)processInputScript:(NSString *)inputScript {
+    
+    NSString *result = @"";
+    NSArray *lines=[inputScript componentsSeparatedByString:@"\n"];
+    
+    for (NSString *line in lines) {
+        
+        result = [result stringByAppendingString:line];
+    }
+    
+    return result;
+}
+
 @end

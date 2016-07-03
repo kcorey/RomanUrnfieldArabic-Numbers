@@ -12,5 +12,6 @@
 @interface InputHandler : NSObject
 
 - (NSString *)convertOneValue:(NSString *)inputValue withOutputType:(id<NumberBase>)outputType;
+- (NSString *)processInputScript:(NSString *)inputScript;
 
 @end

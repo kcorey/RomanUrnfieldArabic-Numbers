@@ -8,11 +8,33 @@
 
 #import "RomanNumber.h"
 
+NSArray *denominations;
+
+@interface RomanNumber ()
+
+@end
+
 @implementation RomanNumber  {
     
     NSInteger arabicValue;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        denominations = @[
+                          @[@"M",@1000],
+                          @[@"D",@500],
+                          @[@"C",@100],
+                          @[@"L",@50],
+                          @[@"X",@10],
+                          @[@"V",@5],
+                          @[@"I",@1],
+                          ];
+    }
+    return self;
+}
 - (id<NumberBase>)recognise:(NSString *)inputString {
     
     if (inputString) {
@@ -33,68 +55,104 @@
     return nil;
 }
 
-//- (NSInteger)valueOfChar:(NSString *)character {
-//    
-////    if ([character isEqualToString:@"/"]) {
-////        
-////        return 1;
-////    }
-////    if ([character isEqualToString:@"\\"]) {
-////        
-////        return 5;
-////    }
-//    return 0;
-//}
-
-- (NSInteger)convertToA:(NSString *)inputValue {
+- (NSString *)standardToCondensed:(NSString *)inputString {
     
-    NSInteger result = 1;
-//    BOOL isOnes = YES;
-//    
-//    for (NSInteger index = 0; index < [inputValue length]; index++) {
-//        NSString *character = [inputValue substringWithRange:NSMakeRange(index,1)];
-//        
-//        if (isOnes) {
-//            
-//            if ([character isEqualToString:@"/"]) {
-//                
-//                result += 1;
-//            } else if ([character isEqualToString:@"\\"]) {
-//                
-//                result += 5;
-//                isOnes = NO;
-//            }
-//        }
-//        else {
-//            
-//            if ([character isEqualToString:@"/"]) {
-//                
-//                result = 0;
-//            } else if ([character isEqualToString:@"\\"]) {
-//                
-//                result += 5;
-//            }
-//        }
-//    }
+    NSString *fivessearchString;
+    NSString *fivesreplaceString;
+    NSString *onessearchString;
+    NSString *onesreplaceString;
+    NSString *tenDenominationLabel;
+    NSString *fiveDenominationLabel;
+    NSString *oneDenominationLabel;
+    NSString *result = inputString;
+    
+    for (int curDenomination = 2; curDenomination < [denominations count]; curDenomination += 2) {
+        
+        oneDenominationLabel = denominations[curDenomination][0];
+        fiveDenominationLabel = denominations[curDenomination - 1][0];
+        tenDenominationLabel = denominations[curDenomination - 2][0];
+        
+        fivessearchString = [NSString stringWithFormat:@"%@%@%@%@%@",fiveDenominationLabel,oneDenominationLabel,oneDenominationLabel,oneDenominationLabel,oneDenominationLabel];
+        fivesreplaceString = [NSString stringWithFormat:@"%@%@",oneDenominationLabel,tenDenominationLabel];
+        result = [result stringByReplacingOccurrencesOfString:fivessearchString withString:fivesreplaceString];
+        
+        onessearchString = [NSString stringWithFormat:@"%@%@%@%@",oneDenominationLabel,oneDenominationLabel,oneDenominationLabel,oneDenominationLabel];
+        onesreplaceString = [NSString stringWithFormat:@"%@%@",oneDenominationLabel,fiveDenominationLabel];
+        
+        result = [result stringByReplacingOccurrencesOfString:onessearchString withString:onesreplaceString];
+    }
+    
+    return result;
+}
+
+- (NSString *)condensedToStandard:(NSString *)inputString {
+    
+    NSString *fivessearchString;
+    NSString *fivesreplaceString;
+    NSString *onessearchString;
+    NSString *onesreplaceString;
+    NSString *tenDenominationLabel;
+    NSString *fiveDenominationLabel;
+    NSString *oneDenominationLabel;
+    NSString *result = inputString;
+    
+    for (int curDenomination = 2; curDenomination < [denominations count]; curDenomination += 2) {
+        
+        oneDenominationLabel = denominations[curDenomination][0];
+        fiveDenominationLabel = denominations[curDenomination - 1][0];
+        tenDenominationLabel = denominations[curDenomination - 2][0];
+        
+        fivessearchString = [NSString stringWithFormat:@"%@%@",oneDenominationLabel,tenDenominationLabel];
+        fivesreplaceString = [NSString stringWithFormat:@"%@%@%@%@%@",fiveDenominationLabel,oneDenominationLabel,oneDenominationLabel,oneDenominationLabel,oneDenominationLabel];
+        result = [result stringByReplacingOccurrencesOfString:fivessearchString withString:fivesreplaceString];
+        
+        onessearchString = [NSString stringWithFormat:@"%@%@",oneDenominationLabel,fiveDenominationLabel];
+        onesreplaceString = [NSString stringWithFormat:@"%@%@%@%@",oneDenominationLabel,oneDenominationLabel,oneDenominationLabel,oneDenominationLabel];
+        
+        result = [result stringByReplacingOccurrencesOfString:onessearchString withString:onesreplaceString];
+    }
+    
+    return result;
+}
+
+
+
+- (NSInteger)convertToA:(NSString *)inputString {
+    
+    NSInteger result = 0;
+    NSString *standardForm = [self condensedToStandard:inputString];
+    NSInteger inputLength = [standardForm length];
+    
+    for (int i=0; i < inputLength; i++) {
+        
+        NSString *ichar  = [NSString stringWithFormat:@"%c", [standardForm characterAtIndex:i]];
+        for (NSArray *denomination in denominations) {
+            
+            if ([denomination[0] isEqualToString:ichar]) {
+                
+                result += [denomination[1] integerValue];
+            }
+        }
+    }
+    
     return result;
 }
 
 - (NSString *)convertToString:(NSInteger)aValue {
-    
-//    NSInteger fives = aValue / 5;
-//    NSInteger ones = aValue % 5;
+
+    NSInteger remainder = aValue;
     NSString *accumulator = @"";
+
+    for (NSArray *denomination in denominations) {
+
+        while (remainder >= [denomination[1] integerValue]) {
+            
+            remainder -= [denomination[1] integerValue];
+            
+            accumulator = [NSString stringWithFormat:@"%@%@", accumulator, denomination[0]];
+        }
+    }
     
-//    for (NSInteger index = 0; index < ones; index++) {
-//        
-//        accumulator = [accumulator stringByAppendingString:@"/"];
-//    }
-//    
-//    for (NSInteger index = 0; index < fives; index++) {
-//        
-//        accumulator = [accumulator stringByAppendingString:@"\\"];
-//    }
-//    
     return accumulator;
 }
 

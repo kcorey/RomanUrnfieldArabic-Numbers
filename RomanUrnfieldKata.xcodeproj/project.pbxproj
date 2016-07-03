@@ -19,6 +19,7 @@
 		BCA65CB11D293B03006EBE2D /* RomanNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA65CB01D293B03006EBE2D /* RomanNumber.m */; };
 		BCA65CB31D293BC0006EBE2D /* RomanNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA65CB21D293BC0006EBE2D /* RomanNumberTests.m */; };
 		BCA65CB41D293C38006EBE2D /* RomanNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA65CB01D293B03006EBE2D /* RomanNumber.m */; };
+		BCA65CB71D295A1C006EBE2D /* InputHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA65CB61D295A1C006EBE2D /* InputHandlerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,8 @@
 		BCA65CAF1D293B03006EBE2D /* RomanNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RomanNumber.h; sourceTree = "<group>"; };
 		BCA65CB01D293B03006EBE2D /* RomanNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomanNumber.m; sourceTree = "<group>"; };
 		BCA65CB21D293BC0006EBE2D /* RomanNumberTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomanNumberTests.m; sourceTree = "<group>"; };
+		BCA65CB51D29558A006EBE2D /* Readme */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme; sourceTree = "<group>"; };
+		BCA65CB61D295A1C006EBE2D /* InputHandlerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandlerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 		504714F31D2156A3005E0A27 = {
 			isa = PBXGroup;
 			children = (
+				BCA65CB51D29558A006EBE2D /* Readme */,
 				504714FE1D2156A3005E0A27 /* RomanUrnfieldKata */,
 				5047150D1D215751005E0A27 /* UrnfieldTests */,
 				504714FD1D2156A3005E0A27 /* Products */,
@@ -112,6 +116,7 @@
 				504715101D215751005E0A27 /* Info.plist */,
 				BC5C9E2B1D21B941008D3B30 /* ArabicNumberTests.m */,
 				BCA65CB21D293BC0006EBE2D /* RomanNumberTests.m */,
+				BCA65CB61D295A1C006EBE2D /* InputHandlerTests.m */,
 			);
 			path = UrnfieldTests;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				5047150F1D215751005E0A27 /* UrnfieldTests.m in Sources */,
 				BCA65CB31D293BC0006EBE2D /* RomanNumberTests.m in Sources */,
 				BC5C9E2C1D21B941008D3B30 /* ArabicNumberTests.m in Sources */,
+				BCA65CB71D295A1C006EBE2D /* InputHandlerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,14 @@
+RomanUrnfieldKata
+
+This kata was taken from page: http://code.joejag.com/coding-dojo/converting-between-different-numeral-systems/
+
+Though demonstrated, it's never explicitly stated the form that Roman numerals take ('negative' aka 'condensed' form vs. 'standard').  condensed is where IV represents 4, and IX is 9. Standard is where 4 is 'IIII'.  I take advantage of this when converting, as the standard is much easier to calculate.  NOTE: there's no check to try to determine which is used.  It's assumed that all input is 'condensed'.
+
+Also, note that because ObjectiveC is a C-based language, be very careful about the Urnfield numbers, as they are represented with a back-slash for 5...this means that the tests, when testing for a particular value, need to protect that character...so "\\" is the same to the compiler as "\" is to our eyes.
+
+Finally, we assumed that the example input and output was from a terminal...so the aim is to get as close as possible to the output.  However, there's no way mentioned to indicate what the desired output format should be.  We've decided arbitrarily on a few rules:
+    1) Any line not recognized by a number type should simply be returned verbatim.
+    2) All values on a given line are assumed to be the same type.
+    3) The default output type is Arabic.
+    4) If a line begins with 'Example: <name 1> -> <name 2>', it is assumed to be a command of what the output type should be.
+
